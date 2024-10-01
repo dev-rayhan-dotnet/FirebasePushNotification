@@ -12,6 +12,7 @@ builder.Services.AddSwaggerGen();
 
 var app = builder.Build();
 
+// if we get .json file error need to update properties copy always
 var credentials = GoogleCredential.FromFile(Path.Combine(AppDomain.CurrentDomain.BaseDirectory, "peopledesk-4463d-b9699722536e.json"));
 
 FirebaseApp.Create(new AppOptions()
